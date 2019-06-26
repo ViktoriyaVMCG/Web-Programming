@@ -40,28 +40,26 @@ h3{
 }
 
 .lada{
-	font-family: Century Gothic, Futura, Sans-serif;
+	font-family: "Century Gothic, Futura, Sans-serif";
 	width:80%;
 	border:2px solid #FFFFFF;
     border-collapse: collapse;
-    background-color:#CC9933
+    background-color:#CC9933;
 	margin-top: 20px;
 	padding: 5px;
     table-layout: auto;
-	margin-top: 20px;
-	color:#FFFFFF
+	color:#FFFFFF;
 }
 .tada{
-	font-family: Century Gothic, Futura, Sans-serif;
+	font-family: "Century Gothic, Futura, Sans-serif";
 	table-layout: auto;
 	border-collapse: collapse;
 	border:2px solid #FFFFFF;
 	width:55%;
 	padding: 5px;
 	margin-top: 20px;
-	background-color:#CC9933
-	width:55%;
-	color:#FFFFFF
+	background-color:#CC9933;
+	color:#FFFFFF;
 }
 
 th,td{
@@ -84,7 +82,7 @@ tfoot {
 
 
 h1, h2 {
-	font-family: Century Gothic, Futura, Sans-serif;
+	font-family: "Century Gothic, Futura, Sans-serif";
 	background-color: #F0F0F0;
 	color: #A4A400;
 	text-align: center;
@@ -107,7 +105,6 @@ td:nth-child(1)
 
 .pi{
   list-style-image: url('a.jpg');
-  transform-image: scale(0.2);
 }
  .item{
 	 text-align: right;
@@ -153,6 +150,10 @@ td:nth-child(1)
   margin-top:20px;
 
 }
-	
 
+.leff{
+	font-family: "Time New Rona, Sans-serif";
+	margin-left:50px;
+	font-size:20px;
+	margin-right:40px;
 }
