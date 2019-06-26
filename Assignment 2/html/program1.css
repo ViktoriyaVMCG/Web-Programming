@@ -1,0 +1,158 @@
+
+* {
+font-family: Georgia, Garamond, Sans-serif;
+}
+
+
+body {
+	background-color: #FFCC00;
+	color: #000000;
+}
+
+.top{
+
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-right: 20px solid #003366;
+  background-color:#F0F0F0;
+  color:#003366;
+
+}
+.left{
+	margin-left:50px;
+}
+
+.inline h3, 
+.inline p {
+    margin:0px;
+    display: inline-block;
+} 
+
+h3{
+	text-align: left.
+}
+
+.lada{
+	font-family: Century Gothic, Futura, Sans-serif;
+	width:80%;
+	border:2px solid #FFFFFF;
+    border-collapse: collapse;
+    background-color:#CC9933
+	margin-top: 20px;
+	padding: 5px;
+    table-layout: auto;
+	margin-top: 20px;
+	color:#FFFFFF
+}
+.tada{
+	font-family: Century Gothic, Futura, Sans-serif;
+	table-layout: auto;
+	border-collapse: collapse;
+	border:2px solid #FFFFFF;
+	width:55%;
+	padding: 5px;
+	margin-top: 20px;
+	background-color:#CC9933
+	width:55%;
+	color:#FFFFFF
+}
+
+th,td{
+    border: 2px solid #fff;
+	text-align: center;
+	padding: 5px;
+}
+
+thead,
+tfoot {
+    background-color: #F0F0F0;
+    color: #A4A400;
+	border: 2px solid;
+	padding:5px;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+
+h1, h2 {
+	font-family: Century Gothic, Futura, Sans-serif;
+	background-color: #F0F0F0;
+	color: #A4A400;
+	text-align: center;
+	letter-spacing: 3px;
+}
+.backgr{
+	background-color: #003366
+}
+td:nth-child(1)
+{
+	background-color: #003366;
+}
+.Lemon{
+  float: right;
+  width:500px;
+  height:400px;
+  margin-right:40px;
+  margin-top:40px;
+}
+
+.pi{
+  list-style-image: url('a.jpg');
+  transform-image: scale(0.2);
+}
+ .item{
+	 text-align: right;
+	 float: right;
+ }
+ 
+ .lol{
+	   margin-right:250px;
+ }
+ 
+ .Lem{
+  float: right;
+  width:300px;
+  height:400px;
+  margin-right:50px;
+}
+.thick{
+	display: inline-block;
+	font-weight: bold;
+}
+.heading{
+	letter-spacing: 3px;
+}
+
+.italic{
+	 font-style: italic;
+}
+
+.red{
+	background-color:lightblue;
+	max-width:500px;
+	margin: auto;
+	border: 5px solid red;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.Le{
+  float: right;
+  width:400px;
+  height:200px;
+  margin-right:40px;
+  margin-top:20px;
+
+}
+	
+
+}
