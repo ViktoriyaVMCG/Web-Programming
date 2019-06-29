@@ -1,6 +1,6 @@
 body {
   font-family: 'Quicksand', sans-serif;
-  background: url(p.jpg);
+  background: url(../image/p.jpg);
   background-size: cover;
 }
 
@@ -40,7 +40,7 @@ body {
 }
  
 .flip-card {
-  background-image: url("l.jpg");
+  background-image: url("../image/l.jpg");
   width: 200px;
   height: 200px;
   perspective: 1000px;
@@ -87,7 +87,7 @@ body {
 .lol{
 	position:absolute;
 	left:50%;
-	top:115%;
+	top:110%;
 	transform: translate(-50%, -50%);
 	margin:0;
 	padding:0 20px;
@@ -96,13 +96,42 @@ body {
 	text-shadow: 0 0 20px #33FFE2;
 }
 
-.lol:after{
-	content: attr(data-text);
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 0 20px;
-	z-index: -1;
-	color: #33FFE2;
+.tit{
+    font-size: 30px;
+	font-style: italic;
+	margin-top: 50px;
+}
+
+.tri{
+	font-size: 30px;
+	font-style: italic;
+	margin-top: 27px;
 	
+}
+
+.tor{
+	font-size: 30px;
+	font-style: italic;
+	margin-top: 15px;
+}
+
+.tor{
+	font-size: 30px;
+	font-style: italic;
+	margin-top: 15px;
+}
+
+.tt{
+	font-size: 30px;
+	margin-top: 50px;
+}
+
+.ti{
+	font-size: 30px;
+	margin-top: 70px;
+}
+.tot{
+	font-size: 28px;
+	margin-top: 5px;
+	font-style: italic;
 }
