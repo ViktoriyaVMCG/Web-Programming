@@ -1,0 +1,21 @@
+
+.center{
+	margin-left:35%;	
+}
+
+.tab{
+	width:300px;
+	border:1px;
+}
+
+.red{
+	height:35px; 
+	width:35px; 
+	background-color:red;
+}
+
+.black{
+	height:35px; 
+	width:35px; 
+	background-color:black;
+}
