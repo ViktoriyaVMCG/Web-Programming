@@ -1,0 +1,47 @@
+<html>
+  <head>
+	<title>Guessing Game</title>
+    <script>
+	var randnum;
+    var attempts = 15;
+    var cur = 15;
+
+	function randomnumber(){
+		randnum=Math.floor(Math.random()*100)+1;
+		document.getElementById('attempts').innerHTML=cur+" guesses left";
+		}
+
+	function checkingrandomnumber(){
+		var enterednumber=new Number(document.getElementById('number').value);
+		if(enterednumber==randnum ){
+			alert('You entered the correct number '+randnum+'.\n Restarting game.');
+			cur=attempts;
+			randomnumber();
+		}else{
+			if(enterednumber>randnum && cur>1){
+				alert('The secret number is lower');
+				cur=cur-1;
+				document.getElementById('attempts').innerHTML=cur+" guesses left";
+			}
+			else if(enterednumber<randnum && cur>1){
+				alert('The secret number is higher');
+				cur=cur-1;
+				document.getElementById('attempts').innerHTML=cur+" guesses left";
+
+		    }if(cur==1){
+				alert('You ran out of guesses.Correct number was '+randnum+'.\n Restarting game.');
+				cur=attempts;
+				randomnumber();
+		    }
+	    }
+    }
+
+    </script>
+  </head>
+<body onload="randomnumber()">
+ <input type="text" name="number" id="number">
+	<a href="#" onclick="checkingrandomnumber()">Guess Number</a>
+		<p id="attempts"></p>
+</body>
+
+</html>

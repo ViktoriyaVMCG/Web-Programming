@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title>Payroll Report</title>
+			<link rel="stylesheet" type="text/css" href="main.css">
+<script>
+
+		var Numofemp = 0, paidOut = 0, emp, payment, salaryperhour = [], weekPayment = [];
+
+		for (var emp = 0; emp <=100; emp++) {
+			var hoursWorked = prompt("Please enter the total number of hours worked by Employee # " + (emp + 1) + " this week:", 0);
+            if (hoursWorked == -1) {
+			break;
+			}else{
+				if (hoursWorked != -1){
+					salaryperhour[emp] = hoursWorked;
+					Numofemp = Numofemp + 1;
+
+				if (salaryperhour[emp] <= 40) {
+					payment = salaryperhour[emp] * 15;
+					weekPayment[emp] = payment;
+			}else{
+					payment = 40 * 15 + (salaryperhour[emp] - 40) * (15 + 15 / 2);
+					weekPayment[emp] = payment;
+				}
+					paidOut = paidOut + weekPayment[emp];
+			}else {		
+			break;
+				  }
+			}
+		}
+
+</script>
+
+</head>
+	<body>
+	<div id="myDiv"></div>
+		<h2>The total pay for this week :<span id="paidOut"></span></h2>
+
+<script>
+
+
+	var row, col, table = document.createElement("Table");
+			table.setAttribute("border", "2px");
+			row = table.insertRow(i);
+			col = row.insertCell(0);
+			col.innerHTML = "Employee #";
+			col.setAttribute("class", "th");
+			col = row.insertCell(1);
+			col.innerHTML = "The number of hours worked this week";
+			col.setAttribute("class", "th");
+			col = row.insertCell(2);
+			col.innerHTML = "The employee's pay for the week";
+			col.setAttribute("class", "th");
+	for (var i = 0; i < Numofemp; i++) {
+			row = table.insertRow(i + 1);
+			col = row.insertCell(0);
+			col.innerHTML = (i + 1);
+			col = row.insertCell(1);
+			col.innerHTML = salaryperhour[i];
+			col = row.insertCell(2);
+			col.innerHTML = weekPayment[i];
+	}
+	var div = document.getElementById("myDiv");
+		div.appendChild(table);
+		document.getElementById("paidOut").innerHTML = paidOut;
+</script>
+</body>
+</html>

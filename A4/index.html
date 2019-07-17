@@ -1,0 +1,205 @@
+
+<html>
+
+<head>
+
+<title> Matching Game </title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="game.css">
+
+</head>
+
+<body>
+
+<h1 class="neon" data-text="[Memory_Game]">[Memory_Game]</h1>
+<!-- Section to display instruction with option to input grid size -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div id="instructions">
+
+<p>Please select the size of grid:</p>
+
+<select id="gridSize">
+
+<option value="lvl1">8 pics</option>
+
+<option value="lvl2">10 pics</option>
+
+<option value="lvl3">12 pics</option>
+
+</select><br>
+
+<p>Please select the level of difficulty:</p>
+
+<select id="revealTime">
+
+<option value="8">Level 1 </option>
+
+<option value="5">Level 2 </option>
+
+<option value="3">Level 3 </option>
+
+</select><br>
+
+<br>
+
+<input type="button" onclick="start()" value="Start">
+
+<br>
+
+<p>Rules of the game:</p>
+
+<h5> 1.Choose how many cards would you like play.</h5>
+<h5>Each grid of card has its own limit of time by the end of which you will lose.</h5>
+<h5> 2.Choose the level of difficulry:</h5>
+<h5>Level 1 (8 sec reveal time)</h5>
+<h5>Level 2 (5 sec reveal time)</h5>
+<h5>Level 3 (3 sec reveal time)</h5>
+<h5>Each level of diffuculty gives player some amound of time to memorize cards before they are going to flip over.</h5>
+
+
+</div>
+
+
+
+<!-- table to display when grid size is 8 -->
+
+<div id="lvl1" class="gameboard">
+
+<table>
+
+<tr>
+
+<td id="1"><img src="" id="1"></td>
+
+<td id="2"><img src="" id="2"></td>
+
+<td id="3"><img src="" id="3"></td>
+
+<td id="4"><img src="" id="4"></td>
+
+</tr>
+
+<tr>
+
+<td id="5"><img src="" id="5"></td>
+
+<td id="6"><img src="" id="6"></td>
+
+<td id="7"><img src="" id="7"></td>
+
+<td id="8"><img src="" id="8"></td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- table to display when grid size is 10 -->
+
+<div id="lvl2" class="gameboard">
+
+<table>
+
+<tr>
+
+<td id="1"><img src="" id="1"></td>
+
+<td id="2"><img src="" id="2"></td>
+
+<td id="3"><img src="" id="3"></td>
+
+<td id="4"><img src="" id="4"></td>
+
+<td id="5"><img src="" id="5"></td>
+
+</tr>
+
+<tr>
+
+<td id="6"><img src="" id="6"></td>
+
+<td id="7"><img src="" id="7"></td>
+
+<td id="8"><img src="" id="8"></td>
+
+<td id="9"><img src="" id="9"></td>
+
+<td id="10"><img src="" id="10"></td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- table to display when grid size is 12 -->
+
+<div id="lvl3" class="gameboard">
+
+<table>
+
+<tr>
+
+<td id="1"><img src="" id="1"></td>
+
+<td id="2"><img src="" id="2"></td>
+
+<td id="3"><img src="" id="3"></td>
+
+<td id="4"><img src="" id="4"></td>
+
+</tr>
+
+<tr>
+
+<td id="5"><img src="" id="5"></td>
+
+<td id="6"><img src="" id="6"></td>
+
+<td id="7"><img src="" id="7"></td>
+
+<td id="8"><img src="" id="8"></td>
+
+</tr>
+
+<tr>
+
+<td id="9"><img src="" id="9"></td>
+
+<td id="10"><img src="" id="10"></td>
+
+<td id="11"><img src="" id="11"></td>
+
+<td id="12"><img src="" id="12"></td>
+
+</tr>
+
+</table>
+
+</div>
+
+<!-- Shows when the game is finished -->
+
+<div id="win">
+
+<h1>You Win!!</h1>
+
+<button onclick="window.location.href = 'index.html';">Go Back</button>
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+
+</html>
